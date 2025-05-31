@@ -1,107 +1,148 @@
-# Finance Dashboard Application
+# 💸 Finance Dashboard Application
 
 ![App Screenshot](https://via.placeholder.com/1200x600/556B2F/FFFFFF?text=Finance+Dashboard)
 
-A modern financial dashboard built with React, Redux, and Material-UI featuring user authentication and transaction management.
+A modern financial dashboard built with **React**, **Redux**, and **Material-UI** featuring secure authentication and transaction management.
+
+---
 
 ## 🌐 Live Demo
 
-Access the deployed application:  
+Access the deployed application:
 🔗 [https://yourusername.github.io/finance-dashboard](https://yourusername.github.io/finance-dashboard)
+
+---
 
 ## ✨ Features
 
-- **🔐 Secure Authentication**
-  - Login/Register functionality
-  - Form validation with error handling
-  - Session management
+### 🔐 Secure Authentication
 
-- **💰 Financial Management**
-  - View income/expense transactions
-  - Add new transactions with dropdown selection
-  - Real-time data updates
+* Login/Register functionality
+* Form validation with error handling
+* Session-based access control
 
-- **🎨 Modern UI**
-  - Olive green and white color theme
-  - Fully responsive design
-  - Loading states and notifications
-  - Clean, intuitive interface
+### 💰 Financial Management
+
+* View income and expense transactions
+* Add new transactions with category selection
+* Real-time data updates via Redux
+
+### 🎨 Modern UI
+
+* Olive green and white theme
+* Responsive layout across devices
+* Smooth loading states and notifications
+* Clean, accessible interface
+
+---
 
 ## 🔑 Login Credentials
 
-Use these test accounts to explore the application:
+Use these test credentials to explore the app:
 
-| Username | Password  | Expected Result       |
-|----------|-----------|-----------------------|
-| `Sam`    | `password`| ✅ Successful login    |
-| `Mat`    | any value | ❌ Shows error message |
-| Any other| any value | ❌ Shows error message |
+| Username | Password   | Behavior              |
+| -------- | ---------- | --------------------- |
+| `Sam`    | `password` | ✅ Successful login    |
+| `Mat`    | any value  | ❌ Shows error message |
+| Others   | any value  | ❌ Shows error message |
+
+---
 
 ## 🛠️ Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/finance-dashboard.git
    cd finance-dashboard
-Install dependencies
+   ```
 
-bash
-npm install
-Start development server
+2. **Install dependencies**
 
-bash
-npm run dev
-Open in browser
+   ```bash
+   npm install
+   ```
 
-http://localhost:5173
-🚀 Deployment (GitHub Pages)
-Install gh-pages:
+3. **Start development server**
 
-bash
-npm install gh-pages --save-dev
-Add to package.json:
+   ```bash
+   npm run dev
+   ```
 
-json
-"homepage": "https://yourusername.github.io/finance-dashboard",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-Run deployment:
+4. **Open in your browser**
 
-bash
-npm run deploy
-📁 Project Structure
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 🚀 Deployment (GitHub Pages)
+
+1. **Install `gh-pages`**
+
+   ```bash
+   npm install gh-pages --save-dev
+   ```
+
+2. **Update `package.json`**
+
+   ```json
+   "homepage": "https://yourusername.github.io/finance-dashboard",
+   "scripts": {
+     "dev": "vite",
+     "build": "vite build",
+     "preview": "vite preview",
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
+   }
+   ```
+
+3. **Deploy the app**
+
+   ```bash
+   npm run deploy
+   ```
+
+---
+
+## 📁 Project Structure
+
+```
 src/
-├── api/               # Mock API services
-├── assets/            # Static assets
-├── components/        # Reusable components
-│   ├── Header.jsx     # Navigation header
-│   └── Footer.jsx     # Page footer
-├── pages/             # Application views
-│   ├── LoginPage.jsx  # Login screen
-│   ├── RegisterPage.jsx # Registration
-│   └── LandingPage.jsx # Dashboard
-├── redux/             # State management
-│   ├── store.js       # Redux store
-│   └── appSlice.js    # Redux slice
-├── theme/             # UI theme
-│   └── theme.js       # MUI theme config
-├── App.jsx            # Root component
-└── main.jsx           # Entry point
-🧰 Technologies Used
-React
+🔽️ api/               # Mock API services
+🔽️ assets/            # Static images and icons
+🔽️ components/        # Reusable UI components
+    🔽️ Header.jsx     # Top navigation
+    🔽️ Footer.jsx     # Bottom footer
+🔽️ pages/             # Route-based pages
+    🔽️ LoginPage.jsx
+    🔽️ RegisterPage.jsx
+    🔽️ LandingPage.jsx
+🔽️ redux/             # Redux logic
+    🔽️ store.js
+    🔽️ appSlice.js
+🔽️ theme/             # Material UI theme config
+    🔽️ theme.js
+🔽️ App.jsx            # Root app component
+🔽️ main.jsx           # Application entry point
+```
 
-Redux
+---
 
-MUI
+## 🧰 Technologies Used
 
-Vite
+* [React](https://reactjs.org/)
+* [Redux Toolkit](https://redux-toolkit.js.org/)
+* [Material UI](https://mui.com/)
+* [Vite](https://vitejs.dev/)
+* [React Router](https://reactrouter.com/)
 
-React Router
+---
 
-📜 Available Scripts
-bash
+## 📜 Available Scripts
+
+```bash
 # Start development server
 npm run dev
 
@@ -113,24 +154,32 @@ npm run preview
 
 # Deploy to GitHub Pages
 npm run deploy
-📝 Usage Instructions
-Login Page
+```
 
-Enter username "Sam" and password "password" for successful login
+---
 
-Click "Register here" link to create new account
+## 📝 Usage Instructions
 
-Dashboard
+### 🧱 Login Page
 
-View financial summary table
+* Enter username `"Sam"` and password `"password"` for successful login
+* Click **"Register here"** to create a new account
 
-Add new transactions using the form
+### 📊 Dashboard
 
-Click refresh button to update data
+* View financial summary
+* Add transactions using the form
+* Refresh data with refresh button
+* Logout using the top-right button
 
-Use logout button to sign out
+---
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📄 License
 
-<div align="center"> <sub>Built with ❤️ by Your Name</sub> </div> ```
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by Your Name</sub>
+</div>
