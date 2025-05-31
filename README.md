@@ -1,6 +1,7 @@
 # 💸 Finance Dashboard Application
 
-![App Screenshot](https://via.placeholder.com/1200x600/556B2F/FFFFFF?text=Finance+Dashboard)
+![image](https://github.com/user-attachments/assets/78ad3ff9-67a1-406b-9639-3c5803f4707f)
+
 
 A modern financial dashboard built with **React**, **Redux**, and **Material-UI** featuring secure authentication and transaction management.
 
@@ -9,7 +10,7 @@ A modern financial dashboard built with **React**, **Redux**, and **Material-UI*
 ## 🌐 Live Demo
 
 Access the deployed application:
-🔗 [https://yourusername.github.io/finance-dashboard](https://yourusername.github.io/finance-dashboard)
+🔗 [https://abduljabbarcse.github.io/sales-register/](https://abduljabbarcse.github.io/sales-register/)
 
 ---
 
